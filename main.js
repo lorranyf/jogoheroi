@@ -31,30 +31,31 @@ class Heroina {
         }
         this.status();
     }
-
-    jogarRodada() {
-        if (this.vida > 0) {
-            this.enfrentarDesafio();
-        } else {
-            console.log("Você não sobreviveu... Fim de jogo.");
-        }
-    }
 }
 
+let heroina;
+let rodada;
+
 function start() {
-    const heroina = new Heroina("Lúcia");
-    let rodada = 1;
-    
-    function rodadaJogo() {
-        console.log(`\nRodada ${rodada}`);
-        heroina.jogarRodada();
+    heroina = new Heroina("Lúcia");
+    rodada = 1;
+    console.log("A aventura começou!");
+    console.log(`\nRodada ${rodada}`);
+    heroina.status();
+    console.log("Digite `proximaRodada()` para continuar.");
+}
+
+function proximaRodada() {
+    if (heroina.vida > 0) {
         rodada++;
+        console.log(`\nRodada ${rodada}`);
+        heroina.enfrentarDesafio();
         if (heroina.vida > 0) {
-            setTimeout(rodadaJogo, 2000); // Próxima rodada após 2 segundos
+            console.log("Digite `proximaRodada()` para continuar.");
         } else {
             console.log("Você foi derrotada... O Dragão Sombrio venceu.");
         }
+    } else {
+        console.log("Fim de jogo. Você não pode continuar.");
     }
-
-    rodadaJogo();
 }

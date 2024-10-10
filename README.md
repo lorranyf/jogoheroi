@@ -10,9 +10,14 @@ Era uma vez uma heroína que parte em uma aventura para derrotar o Dragão Sombr
 - A cada rodada, a heroína enfrenta um desafio aleatório.
 - As características da heroína (vida, força, recursos) podem ser alteradas dependendo do desafio.
 - O objetivo é sobreviver até derrotar o Dragão Sombrio.
+- O jogador deve avançar manualmente para a próxima rodada digitando `proximaRodada()`.
 
 ## Como jogar
 1. Abra o index.html em um navegador.
 2. Abra o console do navegador.
 3. Execute o comando `start()` para iniciar o jogo.
+4. Para passar para a próxima rodada, digite `proximaRodada()`.
 
+## Autores
+- Seu nome completo
+- Nome do seu parceiro (se aplicável)
