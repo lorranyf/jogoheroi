@@ -11,7 +11,7 @@ class Heroina {
     }
 
     enfrentarDesafio() {
-        const desafio = Math.floor(Math.random() * 3); // 0, 1 ou 2
+        const desafio = Math.floor(Math.random() * 3); 
         switch (desafio) {
             case 0:
                 console.log("Você encontrou um monstro! Ele te atacou.");
@@ -52,15 +52,14 @@ function proximaRodada() {
         console.log(`\nRodada ${rodada}`);
         heroina.enfrentarDesafio();
         if (heroina.vida > 0) {
-            console.log("Digite `1` para continuar para a próxima rodada.");
+            console.log("Digite `proximaRodada()` para continuar para a próxima rodada.");
         } else {
             console.log("Você foi derrotada... O Dragão Sombrio venceu.");
         }
     } else if (rodada === maxRodadas && heroina.vida > 0) {
         console.log("Parabéns! Você sobreviveu até o final e derrotou o Dragão Sombrio!");
     } else {
-        console.log("Fim de jogo. Você não sobreviveu para derrotar o Dragão.");
+        console.log("Fim de jogo. Você foi derrotado e não sobreviveu para derrotar o Dragão.");
     }
 }
 
-window['1'] = proximaRodada;
