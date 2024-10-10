@@ -43,7 +43,7 @@ function start() {
     console.log("A aventura começou!");
     console.log(`\nRodada ${rodada}`);
     heroina.status();
-    console.log("Digite `1` para continuar para a próxima rodada.");
+    console.log("Digite `proximaRodada()` para continuar para a próxima rodada.");
 }
 
 function proximaRodada() {
