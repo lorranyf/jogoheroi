@@ -87,4 +87,51 @@ function overcomeObstacle() {
             hero.recursos.pocoes -= 1;
             console.log(`Você perdeu 1 poção!`);
     }
+    let level = 0;
+let maxLevels = 6; // adjust this to the total number of levels in your game
+
+function start() {
+    // initialize game state and load level 0
+    level = 0;
+    loadLevel(level);
+}
+
+function nextLevel() {
+    if (level < maxLevels - 1) {
+        level++;
+        loadLevel(level);
+    } else {
+        console.log("Você completou o jogo!");
+    }
+}
+
+function loadLevel(levelNumber) {
+    // load level data and setup game state for the current level
+    switch (levelNumber) {
+        case 0:
+            console.log("Você encontrou um monstro!");
+            battleMonster();
+            break;
+        case 1:
+            console.log("Você encontrou um tesouro!");
+            findTreasure();
+            break;
+        case 2:
+            console.log("Você encontrou um obstáculo!");
+            overcomeObstacle();
+            break;
+        case 3:
+            console.log("Você encontrou um labirinto!");
+            navigateLabyrinth();
+            break;
+        case 4:
+            console.log("Você encontrou um rio!");
+            crossRiver();
+            break;
+        case 5:
+            console.log("Você encontrou um castelo!");
+            conquerCastle();
+            break;
+    }
+}
 }
