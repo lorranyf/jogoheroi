@@ -16,7 +16,7 @@ Era uma vez uma heroína que parte em uma aventura para derrotar o Dragão Sombr
 1. Abra o index.html em um navegador.
 2. Abra o console do navegador.
 3. Execute o comando `start()` para iniciar o jogo.
-4. Para passar para a próxima rodada, digite `proximaRodada()`.
+4. Para passar para a próxima rodada, digite `1`.
 
 ## Autores
 - Lorrany Fábia

@@ -35,7 +35,7 @@ class Heroina {
 
 let heroina;
 let rodada;
-const maxRodadas = 5; // Número máximo de rodadas
+const maxRodadas = 10; 
 
 function start() {
     heroina = new Heroina("Lúcia");
@@ -43,7 +43,7 @@ function start() {
     console.log("A aventura começou!");
     console.log(`\nRodada ${rodada}`);
     heroina.status();
-    console.log("Digite `proximaRodada()` para continuar.");
+    console.log("Digite `1` para continuar para a próxima rodada.");
 }
 
 function proximaRodada() {
@@ -52,7 +52,7 @@ function proximaRodada() {
         console.log(`\nRodada ${rodada}`);
         heroina.enfrentarDesafio();
         if (heroina.vida > 0) {
-            console.log("Digite `proximaRodada()` para continuar.");
+            console.log("Digite `1` para continuar para a próxima rodada.");
         } else {
             console.log("Você foi derrotada... O Dragão Sombrio venceu.");
         }
@@ -62,3 +62,5 @@ function proximaRodada() {
         console.log("Fim de jogo. Você não sobreviveu para derrotar o Dragão.");
     }
 }
+
+window['1'] = proximaRodada;
