@@ -19,5 +19,5 @@ Era uma vez uma heroína que parte em uma aventura para derrotar o Dragão Sombr
 4. Para passar para a próxima rodada, digite `proximaRodada()`.
 
 ## Autores
-- Seu nome completo
-- Nome do seu parceiro (se aplicável)
+- Lorrany Fábia
+- Lindha Emanuelly
