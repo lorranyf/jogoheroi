@@ -11,7 +11,7 @@ class Heroina {
     }
 
     enfrentarDesafio() {
-        const desafio = Math.floor(Math.random() * 3); // 0, 1 ou 2
+        const desafio = Math.floor(Math.random() * 3); 
         switch (desafio) {
             case 0:
                 console.log("Você encontrou um monstro!");
