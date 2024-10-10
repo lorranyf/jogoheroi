@@ -86,4 +86,5 @@ function overcomeObstacle() {
             console.log("Você encontrou uma armadilha!");
             hero.recursos.pocoes -= 1;
             console.log(`Você perdeu 1 poção!`);
-           
+    }
+}
