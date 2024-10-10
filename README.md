@@ -1,19 +1,18 @@
 # jogoheroi
 Lorrany Fábia Silva  Santos                                                                                                                                 
 Lindha Emanuelly Almeida Santiago
-# Era uma vez um heroína
+# Aventura da Heroína
 
-Descrição do Jogo
-"Era uma vez um heroína que parte em uma aventura para derrotar o Dragão Sombrio. A cada rodada, a heroína enfrenta desafios e precisa sobreviver até o final. Será que você consegue derrotar o Dragão?"
+## Descrição do Jogo
+Era uma vez uma heroína que parte em uma aventura para derrotar o Dragão Sombrio. A cada rodada, a heroína enfrenta desafios e precisa sobreviver até o final. Será que você consegue derrotar o Dragão?
 
-Regras
-* O jogador deve enfrentar desafios em cada rodada.
-* O jogo termina quando o herói ou o inimigo morrem.
-* A cada rodada, os status de vida, força e recursos são atualizados e exibidos no console.
+## Regras
+- A cada rodada, a heroína enfrenta um desafio aleatório.
+- As características da heroína (vida, força, recursos) podem ser alteradas dependendo do desafio.
+- O objetivo é sobreviver até derrotar o Dragão Sombrio.
 
-Como jogar
-1. Abra o site no navegador e abra o console do navegador (pressione F12 ou use Ctrl + Shift + I).
-2. Digite start() no console para iniciar o jogo.
+## Como jogar
+1. Abra o index.html em um navegador.
+2. Abra o console do navegador.
+3. Execute o comando `start()` para iniciar o jogo.
 
-Autores
-Lorrany Fábia e Lindha Emanuelly
